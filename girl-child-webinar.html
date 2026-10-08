@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Girl Child Webinar 2026 | AIFSA Worldwide</title>
+
+    <meta
+        name="description"
+        content="AIFSA Worldwide presents HER RIGHTS. HER FUTURE. HER POWER. — International Day of the Girl Child 2026 Virtual Webinar."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main Website Styles -->
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* =========================================================
+           AIFSA GIRL CHILD WEBINAR
+           Dedicated event landing page
+        ========================================================= */
+
+        :root {
+            --event-green: #00843D;
+            --event-green-dark: #00552A;
+            --event-green-deep: #003D20;
+            --event-green-soft: #EAF5EE;
+
+            --event-orange: #F28C28;
+            --event-orange-dark: #D96F0B;
+
+            --event-cream: #FAF8F3;
+            --event-white: #FFFFFF;
+            --event-black: #171513;
+            --event-gray: #68645F;
+            --event-light-gray: #E8E5DF;
+
+            --event-heading: "Playfair Display", serif;
+            --event-body: "DM Sans", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--event-body);
+            color: var(--event-black);
+            background: var(--event-cream);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .webinar-page {
+            overflow: hidden;
+        }
+
+        /* =========================================================
+           EVENT HERO
+        ========================================================= */
+
+        .webinar-hero {
+            min-height: 720px;
+            padding: 150px 24px 90px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(242, 140, 40, 0.15),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 5% 90%,
+                    rgba(0, 132, 61, 0.12),
+                    transparent 32%
+                ),
+                linear-gradient(
+                    135deg,
+                    #003D20 0%,
+                    #00552A 48%,
+                    #00843D 100%
+                );
+            color: white;
+        }
+
+        .webinar-hero::before {
+            content: "";
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: 50%;
+            right: -130px;
+            top: -100px;
+        }
+
+        .webinar-hero::after {
+            content: "";
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border: 1px solid rgba(242,140,40,.35);
+            border-radius: 50%;
+            left: -80px;
+            bottom: -70px;
+        }
+
+        .webinar-container {
+            width: min(1120px, 100%);
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .webinar-hero-grid {
+            display: grid;
+            grid-template-columns: 1.25fr .75fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .webinar-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 22px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--event-orange);
+        }
+
+        .webinar-label::before {
+            content: "";
+            width: 30px;
+            height: 2px;
+            background: var(--event-orange);
+        }
+
+        .webinar-hero h1 {
+            margin: 0;
+            max-width: 780px;
+            font-family: var(--event-heading);
+            font-size: clamp(48px, 7vw, 82px);
+            line-height: .98;
+            letter-spacing: -2px;
+        }
+
+        .webinar-hero h1 em {
+            color: var(--event-orange);
+            font-style: italic;
+        }
+
+        .webinar-subtitle {
+            max-width: 690px;
+            margin: 28px 0 0;
+            color: rgba(255,255,255,.76);
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .webinar-theme {
+            margin-top: 28px;
+            padding-left: 18px;
+            border-left: 3px solid var(--event-orange);
+        }
+
+        .webinar-theme small {
+            display: block;
+            margin-bottom: 6px;
+            color: rgba(255,255,255,.55);
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .webinar-theme strong {
+            display: block;
+            font-family: var(--event-heading);
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        /* Hero event card */
+
+        .webinar-event-card {
+            padding: 38px 32px;
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.18);
+            border-radius: 26px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .webinar-event-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 28px;
+        }
+
+        .webinar-calendar {
+            text-align: center;
+            min-width: 100px;
+            padding: 18px 12px;
+            background: white;
+            color: var(--event-green-deep);
+            border-radius: 18px;
+        }
+
+        .webinar-calendar span {
+            display: block;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .webinar-calendar strong {
+            display: block;
+            margin: 2px 0;
+            font-family: var(--event-heading);
+            font-size: 48px;
+            line-height: 1;
+            color: var(--event-green);
+        }
+
+        .webinar-calendar small {
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .webinar-online {
+            padding: 8px 11px;
+            border: 1px solid rgba(242,140,40,.45);
+            border-radius: 100px;
+            color: var(--event-orange);
+            font-size: 8px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .webinar-card-title {
+            margin-bottom: 24px;
+            font-family: var(--event-heading);
+            font-size: 25px;
+            line-height: 1.25;
+        }
+
+        .webinar-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 13px;
+            padding: 13px 0;
+            border-top: 1px solid rgba(255,255,255,.10);
+            color: rgba(255,255,255,.76);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .webinar-detail-icon {
+            color: var(--event-orange);
+            font-weight: 800;
+            min-width: 20px;
+        }
+
+        /* =========================================================
+           BUTTONS
+        ========================================================= */
+
+        .webinar-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 34px;
+        }
+
+        .webinar-btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 52px;
+            padding: 0 24px;
+            border-radius: 100px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: .5px;
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+        }
+
+        .webinar-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .webinar-btn-primary {
+            background: var(--event-orange);
+            color: white;
+            box-shadow: 0 12px 30px rgba(242,140,40,.22);
+        }
+
+        .webinar-btn-primary:hover {
+            background: var(--event-orange-dark);
+            box-shadow: 0 16px 35px rgba(242,140,40,.28);
+        }
+
+        .webinar-btn-light {
+            border: 1px solid rgba(255,255,255,.28);
+            color: white;
+            background: rgba(255,255,255,.06);
+        }
+
+        .webinar-btn-light:hover {
+            background: rgba(255,255,255,.12);
+        }
+
+        /* =========================================================
+           INTRO
+        ========================================================= */
+
+        .webinar-section {
+            padding: 100px 24px;
+        }
+
+        .webinar-section-white {
+            background: white;
+        }
+
+        .webinar-section-green {
+            background: var(--event-green-soft);
+        }
+
+        .webinar-two-column {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 90px;
+            align-items: start;
+        }
+
+        .webinar-eyebrow {
+            margin-bottom: 14px;
+            color: var(--event-orange-dark);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+        }
+
+        .webinar-section h2 {
+            margin: 0;
+            font-family: var(--event-heading);
+            font-size: clamp(35px, 5vw, 54px);
+            line-height: 1.08;
+            color: var(--event-green-deep);
+        }
+
+        .webinar-section h2 em {
+            color: var(--event-orange-dark);
+            font-style: italic;
+        }
+
+        .webinar-copy {
+            color: var(--event-gray);
+            font-size: 14px;
+            line-height: 1.9;
+        }
+
+        .webinar-copy p {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* =========================================================
+           WHAT TO EXPECT
+        ========================================================= */
+
+        .webinar-expect-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 55px;
+        }
+
+        .webinar-expect-card {
+            padding: 30px;
+            background: white;
+            border: 1px solid var(--event-light-gray);
+            border-radius: 20px;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .webinar-expect-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 45px rgba(0,0,0,.07);
+        }
+
+        .webinar-number {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 38px;
+            height: 38px;
+            margin-bottom: 22px;
+            border-radius: 50%;
+            background: var(--event-green-soft);
+            color: var(--event-green);
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .webinar-expect-card h3 {
+            margin: 0 0 10px;
+            font-family: var(--event-heading);
+            font-size: 22px;
+            color: var(--event-green-deep);
+        }
+
+        .webinar-expect-card p {
+            margin: 0;
+            color: var(--event-gray);
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        /* =========================================================
+           WHO SHOULD ATTEND
+        ========================================================= */
+
+        .webinar-audience-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            margin-top: 45px;
+        }
+
+        .webinar-audience-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: white;
+            border: 1px solid var(--event-light-gray);
+            border-radius: 15px;
+            color: var(--event-green-deep);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .webinar-check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            flex: 0 0 30px;
+            border-radius: 50%;
+            background: var(--event-green);
+            color: white;
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        /* =========================================================
+           CTA
+        ========================================================= */
+
+        .webinar-cta {
+            padding: 90px 24px;
+            background:
+                radial-gradient(
+                    circle at 90% 50%,
+                    rgba(242,140,40,.16),
+                    transparent 35%
+                ),
+                var(--event-green-deep);
+            color: white;
+            text-align: center;
+        }
+
+        .webinar-cta-inner {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .webinar-cta h2 {
+            color: white;
+        }
+
+        .webinar-cta p {
+            margin: 22px auto 0;
+            max-width: 600px;
+            color: rgba(255,255,255,.68);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .webinar-cta .webinar-actions {
+            justify-content: center;
+        }
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        .webinar-footer {
+            padding: 30px 24px;
+            background: #002D18;
+            color: rgba(255,255,255,.55);
+            text-align: center;
+            font-size: 11px;
+        }
+
+        .webinar-footer strong {
+            color: white;
+        }
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 900px) {
+
+            .webinar-hero {
+                min-height: auto;
+                padding-top: 130px;
+            }
+
+            .webinar-hero-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .webinar-event-card {
+                max-width: 600px;
+            }
+
+            .webinar-two-column {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .webinar-expect-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            .webinar-hero {
+                padding: 115px 18px 65px;
+            }
+
+            .webinar-hero h1 {
+                font-size: clamp(43px, 14vw, 65px);
+                letter-spacing: -1.5px;
+            }
+
+            .webinar-subtitle {
+                font-size: 14px;
+            }
+
+            .webinar-event-card {
+                padding: 25px 20px;
+            }
+
+            .webinar-event-card-top {
+                align-items: flex-start;
+            }
+
+            .webinar-calendar {
+                min-width: 85px;
+                padding: 15px 9px;
+            }
+
+            .webinar-calendar strong {
+                font-size: 40px;
+            }
+
+            .webinar-online {
+                font-size: 7px;
+            }
+
+            .webinar-section {
+                padding: 70px 18px;
+            }
+
+            .webinar-section h2 {
+                font-size: 38px;
+            }
+
+            .webinar-audience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .webinar-actions {
+                flex-direction: column;
+            }
+
+            .webinar-btn {
+                width: 100%;
+            }
+
+            .webinar-cta {
+                padding: 70px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="webinar-page">
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <section class="webinar-hero">
+
+        <div class="webinar-container">
+
+            <div class="webinar-hero-grid">
+
+                <div>
+
+                    <div class="webinar-label">
+                        AIFSA WORLDWIDE
+                    </div>
+
+                    <h1>
+                        HER RIGHTS.
+                        <br>
+                        <em>HER FUTURE.</em>
+                        <br>
+                        HER POWER.
+                    </h1>
+
+                    <p class="webinar-subtitle">
+                        International Day of the Girl Child 2026 Virtual Webinar —
+                        a powerful conversation about protecting girls' rights,
+                        ending child marriage and investing in the future of girls.
+                    </p>
+
+                    <div class="webinar-theme">
+                        <small>Webinar Theme</small>
+                        <strong>
+                            End Child Marriage and Invest in Girls' Rights
+                        </strong>
+                    </div>
+
+                    <div class="webinar-actions">
+
+                        <a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfKTQIGnaM8A9dm5xHbZNI11FMwqMKZy-jcyESyDdlDkfgKkA/viewform?usp=publish-editor"
+                            class="webinar-btn webinar-btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Register for the Webinar →
+                        </a>
+
+                        <a
+                            href="../index.html"
+                            class="webinar-btn webinar-btn-light"
+                        >
+                            Visit AIFSA Website
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EVENT INFORMATION CARD -->
+
+                <div class="webinar-event-card">
+
+                    <div class="webinar-event-card-top">
+
+                        <div class="webinar-calendar">
+                            <span>OCT</span>
+                            <strong>11</strong>
+                            <small>2026</small>
+                        </div>
+
+                        <div class="webinar-online">
+                            Virtual Event
+                        </div>
+
+                    </div>
+
+                    <div class="webinar-card-title">
+                        International Day of the Girl Child 2026
+                    </div>
+
+                    <div class="webinar-detail">
+                        <span class="webinar-detail-icon">◷</span>
+                        <span>
+                            Sunday, 11 October 2026<br>
+                            8:00 PM WAT
+                        </span>
+                    </div>
+
+                    <div class="webinar-detail">
+                        <span class="webinar-detail-icon">◉</span>
+                        <span>
+                            Virtual Webinar<br>
+                            Google Meet
+                        </span>
+                    </div>
+
+                    <div class="webinar-detail">
+                        <span class="webinar-detail-icon">✦</span>
+                        <span>
+                            Hosted by AIFSA Worldwide
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         ABOUT THE WEBINAR
+    ========================================================== -->
+
+    <section class="webinar-section webinar-section-white">
+
+        <div class="webinar-container">
+
+            <div class="webinar-two-column">
+
+                <div>
+
+                    <div class="webinar-eyebrow">
+                        The Conversation
+                    </div>
+
+                    <h2>
+                        Why this
+                        <em>matters.</em>
+                    </h2>
+
+                </div>
+
+                <div class="webinar-copy">
+
+                    <p>
+                        Every girl deserves the freedom to learn, grow,
+                        dream and determine the direction of her own future.
+                    </p>
+
+                    <p>
+                        Yet child marriage and other barriers continue to
+                        limit the opportunities available to millions of girls.
+                        Ending these barriers requires more than awareness —
+                        it requires investment, advocacy, education and action.
+                    </p>
+
+                    <p>
+                        Through this webinar, AIFSA Worldwide brings together
+                        young people, advocates, students and interested
+                        participants for a meaningful conversation about
+                        protecting girls' rights and building a future where
+                        every girl can thrive.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         WHAT TO EXPECT
+    ========================================================== -->
+
+    <section class="webinar-section webinar-section-green">
+
+        <div class="webinar-container">
+
+            <div class="webinar-eyebrow">
+                Inside the Webinar
+            </div>
+
+            <h2>
+                Come ready to
+                <em>listen. learn. engage.</em>
+            </h2>
+
+            <div class="webinar-expect-grid">
+
+                <article class="webinar-expect-card">
+
+                    <span class="webinar-number">01</span>
+
+                    <h3>
+                        Learn
+                    </h3>
+
+                    <p>
+                        Gain deeper understanding of girls' rights,
+                        child marriage and the importance of investing
+                        in girls' education and opportunities.
+                    </p>
+
+                </article>
+
+
+                <article class="webinar-expect-card">
+
+                    <span class="webinar-number">02</span>
+
+                    <h3>
+                        Engage
+                    </h3>
+
+                    <p>
+                        Listen to different perspectives, participate
+                        in the conversation and share your thoughts
+                        on the issues affecting girls today.
+                    </p>
+
+                </article>
+
+
+                <article class="webinar-expect-card">
+
+                    <span class="webinar-number">03</span>
+
+                    <h3>
+                        Connect
+                    </h3>
+
+                    <p>
+                        Connect with students, young women, advocates
+                        and other people who believe in creating better
+                        opportunities for girls.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         WHO SHOULD ATTEND
+    ========================================================== -->
+
+    <section class="webinar-section webinar-section-white">
+
+        <div class="webinar-container">
+
+            <div class="webinar-two-column">
+
+                <div>
+
+                    <div class="webinar-eyebrow">
+                        Everyone Is Welcome
+                    </div>
+
+                    <h2>
+                        Is this conversation
+                        <em>for you?</em>
+                    </h2>
+
+                </div>
+
+                <div class="webinar-copy">
+
+                    <p>
+                        Yes. Whether you are a student, young woman,
+                        advocate, educator, community member or simply
+                        someone who cares about the future of girls,
+                        there is a place for you in this conversation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="webinar-audience-grid">
+
+                <div class="webinar-audience-item">
+                    <span class="webinar-check">✓</span>
+                    Female students and young women
+                </div>
+
+                <div class="webinar-audience-item">
+                    <span class="webinar-check">✓</span>
+                    Youth advocates and leaders
+                </div>
+
+                <div class="webinar-audience-item">
+                    <span class="webinar-check">✓</span>
+                    Educators and mentors
+                </div>
+
+                <div class="webinar-audience-item">
+                    <span class="webinar-check">✓</span>
+                    NGOs and community organizations
+                </div>
+
+                <div class="webinar-audience-item">
+                    <span class="webinar-check">✓</span>
+                    Students interested in women's rights
+                </div>
+
+                <div class="webinar-audience-item">
+                    <span class="webinar-check">✓</span>
+                    Anyone passionate about girls' rights
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FINAL CTA
+    ========================================================== -->
+
+    <section class="webinar-cta">
+
+        <div class="webinar-container webinar-cta-inner">
+
+            <div class="webinar-eyebrow">
+                Your Voice Matters
+            </div>
+
+            <h2>
+                Be part of the
+                <em>conversation.</em>
+            </h2>
+
+            <p>
+                Reserve your place at the AIFSA Worldwide International
+                Day of the Girl Child 2026 Virtual Webinar.
+            </p>
+
+            <div class="webinar-actions">
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfKTQIGnaM8A9dm5xHbZNI11FMwqMKZy-jcyESyDdlDkfgKkA/viewform?usp=publish-editor"
+                    class="webinar-btn webinar-btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Register Now →
+                </a>
+
+                <a
+                    href="../index.html"
+                    class="webinar-btn webinar-btn-light"
+                >
+                    Back to AIFSA
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="webinar-footer">
+
+        <strong>AIFSA Worldwide</strong>
+        · The Value of Womanhood
+
+        <br><br>
+
+        International Day of the Girl Child 2026
+
+    </footer>
+
+</div>
+
+
+<!-- =========================================================
+     CURRENT YEAR / BASIC PAGE SCRIPT
+========================================================== -->
+
+<script>
+    /*
+     * This page intentionally does not depend on app.js.
+     * The registration buttons open the Google Form directly.
+     */
+</script>
+
+</body>
+</html>
